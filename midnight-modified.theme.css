@@ -10,19 +10,102 @@
  * @authorLink https://www.refact0r.dev
 */
 
-/* import theme modules */
-@import url('https://raw.githubusercontent.com/muffinman3310/amaryllis-theme-new-layout-fix/refs/heads/main/main-css-amaryllis-module-new.theme.css');
-@import url('https://api.fontshare.com/v2/css?f[]=chillax@400&display=swap');
+/* ---------- THEME IMPORT ---------- */
+@import url("https://raw.githubusercontent.com/therealblbbl/amaryllis-theme-new-layout-fix/main/main-css-amaryllis-module-new.theme.css");
+
+/* ---------- FONT IMPORT ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+
+/* =========================================================
+   ROOT VARIABLES
+   ========================================================= */
 
 :root {
-    --font-primary: "Chillax";
-    --font-display: "Chillax";
+
+    /* layout */
+    container-name: root;
+    --custom-guild-list-padding: 12px;
+    --panel-backdrop-filter: none;
+
+    /* fonts */
+    --font-primary: "Figtree", sans-serif;
+    --font-display: "Figtree", sans-serif;
+    --font-headline: "Figtree", sans-serif;
+    --font-code: "JetBrains Mono", monospace;
+
+    /* optional visual tuning */
+    --custom-chat-input-margin-bottom: 12px;
+    --custom-channel-textarea-text-area-height: 44px;
+
 }
+
+/* =========================================================
+   GLOBAL FONT OVERRIDE (DISCORD 2026)
+   ========================================================= */
+
+html,
+body,
+#app-mount,
+[class*="appMount"],
+[class*="visual-refresh"],
+[class*="layers"],
+[class*="layer"],
+[class*="content"],
+[class*="sidebar"],
+[class*="chat"],
+[class*="messages"],
+[class*="scroller"],
+[class*="message"],
+[class*="messageContent"],
+[class*="markup"],
+[class*="title"],
+[class*="header"],
+[class*="name"],
+[class*="username"],
+[class*="topic"],
+[class*="subtitle"],
+[class*="text"],
+[class*="label"],
+[class*="description"] {
+    font-family: "Figtree", sans-serif !important;
+}
+
+/* =========================================================
+   INPUTS / BUTTONS
+   ========================================================= */
+
+button,
+input,
+textarea,
+select {
+    font-family: "Figtree", sans-serif !important;
+}
+
+/* =========================================================
+   CODE BLOCKS
+   ========================================================= */
+
+code,
+pre,
+[class*="code"] {
+    font-family: "JetBrains Mono", monospace !important;
+}
+
+/* =========================================================
+   FIX HARDCODED GG SANS INSTANCES
+   ========================================================= */
+
+[style*="gg sans"] {
+    font-family: "Figtree", sans-serif !important;
+}
+
+/* =========================================================
+   FINAL BRUTE FORCE FALLBACK
+   ========================================================= */
 
 * {
-    font-family: "Chillax" !important;
+    font-family: inherit;
 }
-
 body {
     /* font, change to '' for default discord font */
     --font: 'Chillax', sans-serif;
