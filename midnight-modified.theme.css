@@ -10,52 +10,48 @@
  * @authorLink https://www.refact0r.dev
 */
 
-/* ---------- THEME IMPORT ---------- */
+/* ---------- THEME ---------- */
 @import url("https://raw.githubusercontent.com/therealblbbl/amaryllis-theme-new-layout-fix/main/main-css-amaryllis-module-new.theme.css");
 
-/* ---------- FONT IMPORT ---------- */
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+/* ---------- CHILLAX FONT ---------- */
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* =========================================================
-   ROOT VARIABLES
-   ========================================================= */
-
+/* ---------- ROOT VARIABLES ---------- */
 :root {
 
-    /* layout */
-    container-name: root;
-    --custom-guild-list-padding: 12px;
-    --panel-backdrop-filter: none;
+  /* layout tweaks */
+  container-name: root;
+  --custom-guild-list-padding: 12px;
+  --panel-backdrop-filter: none;
 
-    /* fonts */
-    --font-primary: "Figtree", sans-serif;
-    --font-display: "Figtree", sans-serif;
-    --font-headline: "Figtree", sans-serif;
-    --font-code: "JetBrains Mono", monospace;
-
-    /* optional visual tuning */
-    --custom-chat-input-margin-bottom: 12px;
-    --custom-channel-textarea-text-area-height: 44px;
+  /* font system */
+  --font-primary: "Chillax", "gg sans", sans-serif !important;
+  --font-display: "Chillax", "gg sans", sans-serif !important;
+  --font-headline: "Chillax", "gg sans", sans-serif !important;
+  --font-code: monospace;
 
 }
 
-/* =========================================================
-   GLOBAL FONT OVERRIDE (DISCORD 2026)
-   ========================================================= */
+/* ---------- DISCORD 2026 FONT OVERRIDE ---------- */
 
 html,
 body,
 #app-mount,
 [class*="appMount"],
-[class*="visual-refresh"],
 [class*="layers"],
 [class*="layer"],
 [class*="content"],
-[class*="sidebar"],
 [class*="chat"],
 [class*="messages"],
-[class*="scroller"],
-[class*="message"],
 [class*="messageContent"],
 [class*="markup"],
 [class*="title"],
@@ -67,44 +63,27 @@ body,
 [class*="text"],
 [class*="label"],
 [class*="description"] {
-    font-family: "Figtree", sans-serif !important;
+  font-family: "Chillax", sans-serif !important;
 }
 
-/* =========================================================
-   INPUTS / BUTTONS
-   ========================================================= */
-
+/* ---------- INPUTS ---------- */
 button,
 input,
 textarea,
 select {
-    font-family: "Figtree", sans-serif !important;
+  font-family: "Chillax", sans-serif !important;
 }
 
-/* =========================================================
-   CODE BLOCKS
-   ========================================================= */
-
+/* ---------- CODE BLOCKS ---------- */
 code,
 pre,
 [class*="code"] {
-    font-family: "JetBrains Mono", monospace !important;
+  font-family: monospace !important;
 }
 
-/* =========================================================
-   FIX HARDCODED GG SANS INSTANCES
-   ========================================================= */
-
-[style*="gg sans"] {
-    font-family: "Figtree", sans-serif !important;
-}
-
-/* =========================================================
-   FINAL BRUTE FORCE FALLBACK
-   ========================================================= */
-
+/* ---------- HARD FALLBACK OVERRIDE ---------- */
 * {
-    font-family: inherit;
+  font-family: "Chillax", sans-serif !important;
 }
 body {
     /* font, change to '' for default discord font */
