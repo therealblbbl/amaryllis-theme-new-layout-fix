@@ -1,11 +1,21 @@
-/* Chillax */
 @font-face {
   font-family: 'Chillax';
-  src: url('https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@refs/heads/main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@refs/heads/main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff') format('woff'),
-       url('https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@refs/heads/main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.ttf') format('truetype');
+  src:
+    url('https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/muffinman3310/amaryllis-theme-new-layout-fix@main/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.ttf') format('truetype');
+
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+/* =========================================================
+   FONT VARIABLES
+   ========================================================= */
+
+:root {
+    --font-primary: "Chillax", sans-serif;
+    --font-display: "Chillax", sans-serif;
+    --font-headline: "Chillax", sans-serif;
+}
