@@ -10,10 +10,6 @@
   font-display: swap;
 }
 
-/* =========================================================
-   FONT VARIABLES
-   ========================================================= */
-
 :root {
     --font-primary: "Chillax", sans-serif;
     --font-display: "Chillax", sans-serif;
