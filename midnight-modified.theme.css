@@ -14,6 +14,15 @@
 @import url('https://raw.githubusercontent.com/muffinman3310/amaryllis-theme-new-layout-fix/refs/heads/main/main-css-amaryllis-module-new.theme.css');
 @import url('https://api.fontshare.com/v2/css?f[]=chillax@400&display=swap');
 
+:root {
+    --font-primary: "Chillax";
+    --font-display: "Chillax";
+}
+
+* {
+    font-family: "Chillax" !important;
+}
+
 body {
     /* font, change to '' for default discord font */
     --font: 'Chillax', sans-serif;
